@@ -7,5 +7,5 @@ const PORT = process.env.PORT;
 app.use(express.static(`${__dirname}/build`));
 
 app.listen(PORT, () => {
-  console.log('crytocurrency initialized');
+  console.log('cryptocurrency initialized');
 });
