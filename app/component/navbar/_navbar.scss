@@ -1,1 +1,96 @@
 @import "../../scss/lib/theme/vars";
+
+.navbar {
+  width: 100%;
+  height: 10vw;
+  background-color: black;
+  position: relative;
+  overflow: visible;
+
+  h1 {
+    font-family: Cinzel;
+    font-size: 4vw;
+    font-weight: 900;
+    position: absolute;
+    display: inline-block;
+    margin-top: .9%;
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+    color: black;
+  }
+
+  h2 {
+    font-family: Cinzel;
+    font-size: 2vw;
+    font-weight: 900;
+    position: absolute;
+    display: inline-block;
+    margin-top: 5.5%;
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+    color: black;
+  }
+
+  .dropdown {
+    position: absolute;
+    right: 1vw;
+    float: right;
+  }
+
+  .logo {
+    position: absolute;
+    float: left;
+    height: 75%;
+    top: 1vw;
+    margin-bottom: 1.5vw;
+    margin-left: 1.5vw;
+    border: 3px solid black;
+  }
+
+  button {
+    position: absolute;
+    right: 1.5vw;
+    top: 2vw;
+    font-size: 2vw;
+  }
+}
+
+.nav-item {
+  a {
+    display: block;
+    color: black;
+    font-size: 1.5vw;
+    transition: 350ms all;
+    right: 10vw;
+
+    &:hover {
+      cursor: pointer;
+      font-style: italic;
+    }
+  }
+}
+
+.nav-background {
+  background: #ebf1f6;
+  background: -moz-linear-gradient(top, #ebf1f6 0%, $nav-main 50%, $site-main 51%, #d5ebfb 100%);
+  background: -webkit-linear-gradient(top, #ebf1f6 0%,$nav-main 50%,$site-main 51%,#d5ebfb 100%);
+  background: linear-gradient(to bottom, #ebf1f6 0%,$nav-main 50%,$site-main 51%,#d5ebfb 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=0 );
+  width: 97.5%;
+  height: 80%;
+  position: relative;
+  left: 1.25%;
+  top: 10%;
+  border-radius: 2px;
+  overflow: visible;
+}
+
+.dropdown-menu {
+  top: 4vw;
+  right: 3vw;
+  left: inherit;
+  min-width: inherit;
+  background-clip: inherit;
+}
