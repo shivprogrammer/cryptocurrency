@@ -1,7 +1,21 @@
 <section class="navbar">
   <div class="nav-background">
+    <img class="logo" ng-src="../../../assets/logo.png">
 
-    <h1>If test file successful, this text will appear as part of the Navbar section</h1>
+    <h1>Crytopcurrency</h1>
+    <h2>Fueling the economy of the future</h2>
 
+    <div uib-dropdown>
+      <button class="btn btn-primary" uib-dropdown-toggle>
+        |||| <span class="caret"></span>
+      </button>
+
+        <ul class="dropdown-menu nav-item" uib-dropdown-menu ng-repeat="route in navBarCtrl.routes">
+          <li class="nav-item" ng-repeat="route in navBarCtrl.routes">
+            <a href="{{ route.url }}">{{ route.name }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
