@@ -1,3 +1,29 @@
-<section class="home">
-  <h1>Successful test will display this text in the primary portion of the page</h1>
-</section>
+<div class ="caro" ng-controller="carouselCtrl">
+  <div style="height: 305px">
+    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+      <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+        <img ng-src="{{slide.image}}" style="margin:auto;">
+        <div class="carousel-caption">
+          <p>{{slide.text}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>
+  <button type="button" class="testy btn btn-default btn-sm" ng-click="status.open = !status.open">Common Definitions</button>
+</p>
+
+<div class="menu">
+  <uib-accordion close-others="oneAtATime">
+    <div uib-accordion-group class="test-text panel-default" is-open="status.open">
+      <uib-accordion>
+        <p uib-accordion-group heading="Crytocurrency">
+        </p>
+        <p uib-accordion-group heading="Bitcoin">
+        </p>
+      </uib-accordion>
+    </div>
+  </uib-accordion>
+</div>
