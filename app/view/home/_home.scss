@@ -1,1 +1,32 @@
 @import "../../scss/lib/theme/vars";
+
+@import "../../scss/lib/theme/vars";
+
+body {
+  background-image: url(http://i.imgur.com/MehUNVL.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.caro {
+  margin-bottom: 2%;
+  position: relative;
+}
+
+.testy {
+  font-size: 1.5vw;
+  position: relative;
+  margin-right: 45%;
+  margin-left: 45%;
+  font-family: $font-normal;
+}
+
+.test-text {
+  font-family: $font-normal;
+  font-size: 1.1vw;
+}
+
+.menu {
+  font-family: $font-normal;
+}
